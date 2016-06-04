@@ -1,0 +1,42 @@
+check_start
+root@localhost:~# uname -a
+Linux localhost 3.10.62-ltsi-WR6.0.0.27_standard #1 SMP PREEMPT Tue May 31 12:01:12 JST 2016 armv7l armv7l armv7l GNU/Linux
+root@localhost:~# cat /proc/irq/default_smp_affinity
+3
+root@localhost:~# echo 1 > /proc/irq/default_smp_affinity
+root@localhost:~# cat /proc/irq/default_smp_affinity
+1
+root@localhost:~# echo 3 > /proc/irq/default_smp_affinity
+check_stop
+abcdcheck_start 
+root@localhost:~# uname -a
+Linux localhost 3.10.62-ltsi-WR6.0.0.27_standard #1 SMP PREEMPT Tue May 31 12:01:12 JST 2016 armv7l armv7l armv7l GNU/Linux
+root@localhost:~# 
+root@localhost:~# cat /proc/irq/default_smp_affinity
+3
+root@localhost:~# echo 1 > /proc/irq/default_smp_affinity
+root@localhost:~# cat /proc/irq/default_smp_affinity
+1
+root@localhost:~# echo 3 > /proc/irq/default_smp_affinity
+check_stop
+check_start
+root@localhost:~# uname -a
+Linux localhost 3.10.62-ltsi-WR6.0.0.27_standard #1 SMP PREEMPT Tue May 31 12:01:12 JST 2016 armv7l armv7l armv7l GNU/Linux
+root@localhost:~# cat /proc/irq/default_smp_affinity
+3
+root@localhost:~# echo 1 > /proc/irq/default_smp_affinity
+root@localhost:~# cat /proc/irq/default_smp_affinity
+1
+root@localhost:~# echo 3 > /proc/irq/default_smp_affinity
+check_stop
+abcdcheck_start 
+root@localhost:~# uname -a
+Linux localhost 3.10.62-ltsi-WR6.0.0.27_standard #1 SMP PREEMPT Tue May 31 12:01:12 JST 2016 armv7l armv7l armv7l GNU/Linux
+root@localhost:~# 
+root@localhost:~# cat /proc/irq/default_smp_affinity
+3
+root@localhost:~# echo 1 > /proc/irq/default_smp_affinity
+root@localhost:~# cat /proc/irq/default_smp_affinity
+1
+root@localhost:~# echo 3 > /proc/irq/default_smp_affinity
+check_stop
